@@ -1,0 +1,19 @@
+# Your adapter. Change the name, then add commands, events and panels.
+# Everything here is explained in
+# https://github.com/solacecasino/folio/blob/main/docs/adapters.md
+name = "My Adapter"
+version = "0.1.0"                  # bump it, then push a tag like v0.1.0 to release
+author = "you"
+license = "MIT"
+description = "One sentence: what it adds to Folio."
+homepage = "https://github.com/solacecasino/folio-adapter-template"
+
+run = ["python3", "main.py"]
+permissions = ["document.read"]    # also: "document.edit", "network"
+events = ["changed"]
+
+[[commands]]
+id = "count"
+label = "Count Words"
+# keys = "cmd+alt+w"               # an optional default shortcut
+# menu = "view"                    # optional: also show it in File, Edit, Format or View

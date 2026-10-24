@@ -1,0 +1,15 @@
+# Push a tag like v0.1.0 and this publishes a release with your adapter's
+# zip, named so Folio and the catalog understand it. Rust adapters (with a
+# Cargo.toml) get a zip for each of macOS, Windows and Linux.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  release:
+    uses: solacecasino/folio-adapters/.github/workflows/build-adapter.yml@main
+    permissions:
+      contents: write
