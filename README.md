@@ -10,7 +10,7 @@ what yours does.
 1. **Click "Use this template"** at the top of this page and name your repo
    (the name becomes your zip's name, such as `word-goals`).
 2. **Edit it.** Change `adapter.toml` (name, description, commands) and
-   `main.py`. `folio.py` does the talking to Folio, so a command is a few
+   `main.py`, and put your name in `LICENSE`. `folio.py` does the talking to Folio, so a command is a few
    lines:
 
    ```python
